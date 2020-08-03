@@ -2,7 +2,7 @@ Tableau Story Published at: https://public.tableau.com/profile/daniel.edie#!/viz
 
 Using data collected by Citi Bike in 2019 and for March-May 2020, an analysis on different phenomena was performed.
 
-##Data Selection & Cleaning
+## **Data Selection & Cleaning**
 
 The total raw data Citi Bike has for their program was very large: 2019 New York City data alone was 3.2 GB in size, while the
 selected months in 2020 were around 980 MB. All combined, there were 23,790,806 records. While Tableau Public can handle data up
@@ -28,16 +28,16 @@ latitude and longitude values. These were corrected, bringing the few records th
 of the data. This leaves a few stations that are close in spatial location; however, they had different station IDs, and
 as a precaution were left unedited. All data cleaning was performed using Python and the pandas package.
 
-##**Distance Calculation**
+## **Distance Calculation**
 
 In order to calculate the distance between stations recorded on a trip, the Haversine formula was used. This calculation
 takes into account the curvature of the Earth in all distance calculations, and while this curvature would be negligable for
 short distance trips, it would account for the longest that can be made in 20 minutes without adding error to the shorter
 duration trips.
 
-##**Analysis of Phenomena Discovered**
+## **Analysis of Phenomena Discovered**
 
-###**Popular Starting and Stoping Stations**
+### **Popular Starting and Stoping Stations**
 The ten most popular station start and stoping locations was found to be in close relation to important stations.
 Pershing Square North was the most popular station for both; this is located next to Grand Central Station, so is an obvious
 major hub for those looking to rent a bike to travel or as the end destination. Another top location was 8th Ave and W 31st Street,
@@ -47,12 +47,12 @@ popular destination. The closer to major hubs or tourist attractions, the more b
 Another analysis showed that the most popular times for rentals to occur were 8 AM, 5 PM, and 6 PM, which matches with the standard
 start/stop work day.
 
-###**Popular Months and Seasons**
+### **Popular Months and Seasons**
 As would be expected, the most popular season for rentals was the summer months at nearly 4 million records, while winter had less
 than 2 million records. The most popular month was September, with a large decrease happening in October. February 2019 saw the fewest
 rentals, which matches when the temperature is coldest.
 
-###**Rentals per Age Group**
+### **Rentals per Age Group**
 Those that are in the Millinneal Age group (25-39) used the service the most, with 7.18 million rentals in 2019. Gen Y (18-24) used
 the service the least. This matches up with the data on popular times; Millennials make up a large portion of the workforce, not having
 many who have retired. Those aged 50 used the service the most, however, by a large portion. Analyzing the data, no outliers stood out.
@@ -60,7 +60,7 @@ many who have retired. Those aged 50 used the service the most, however, by a la
 Looking at the number of rentals and length of time per rental, an obvious trend exists among all age groups: the longer the duration of
 the bike ride, the fewer rentals occured. 6 to 8 minutes is the typical length of a rental.
 
-###**Rentals and Gender**
+### **Rentals and Gender**
 Those that identify as male were the number one customer or subscriber using the service by a large margin, with over 8 million uses in
 2019. Those that identify as female had close to 3 million uses, while there were some 600,000 records with unknown/other as the gender.
 Those identifying as male also had the longest total average distance in 2019, travelling nearly 5000 km that year (to put into perspective,
@@ -68,11 +68,11 @@ this is nearly the radius of the Earth).
 
 Those identifying as female and other/unknown had longer rental times than those identifying as male.
 
-###**Bike Usage**
+### **Bike Usage**
 Of the 19,000 unique bikes in the data, the ten bikes that went the farthest distance all went close to or above 7,000 km in 2019. The top
 bike went 10,134 km. 
 
-###**Effects of COVID-19**
+### **Effects of COVID-19**
 On 3 March 2019, the first person-to-person case of COVID-19 was announced in New York. By 14 March, New York City was locked down. A
 day-by-day analysis of March, April, and May 2020 was performed and the percent increase/decrease was calculated with Tableau. The first
 few days in March 2020 saw a huge increase in usage of bikes, with a small increase happening the 6-8th of March. A quick spike in use
