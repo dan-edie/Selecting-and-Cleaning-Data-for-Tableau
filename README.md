@@ -2,7 +2,7 @@ Tableau Story Published at: https://public.tableau.com/profile/daniel.edie#!/viz
 
 Using data collected by Citi Bike in 2019 and for March-May 2020, an analysis on different phenomena was performed.
 
-##**Data Selection & Cleaning**
+##**Data Selection & Cleaning**##
 
 The total raw data Citi Bike has for their program was very large: 2019 New York City data alone was 3.2 GB in size, while the
 selected months in 2020 were around 980 MB. All combined, there were 23,790,806 records. While Tableau Public can handle data up
